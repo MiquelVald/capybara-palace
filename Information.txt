@@ -1,0 +1,92 @@
+diff → To show the differences between two files
+patch → To apply them differences
+diff -u → More specifical information about the differencs
+diff -u old_File new_File > change.diff → To create a doc called "change.diff" with the script about the differences
+We can do the opposite (applying the change.diff objects to a file)
+with the command "less than" (<).
+patch original_file < changed_file.diff
+
+====================16/07/2020====================
+ls -l .git/ → Sirve para ver los archivos que hay en donde estés, con descripción
+git status → check the status in the folder 
+git commit → to make a commit :) we have to put some message here
+--When you're in git commit you ned to write some message without the # tag, next to it
+--you'll want to save the shit and >  get out, for that, just pulse Esc + Shift + ZZ :)
+
+Tracked files are a part of the snapshot, while untracked files aren't
+Each track file can be in one of three main states modified:
+Modified
+--We've made changes to it that we haven't committed yet.
+Staged 
+--We prepare the project with our changes and make them ready to commit.
+--It becomes staged when we mark those changes to be tracked.
+Committed
+--The changes we made are safely stored in a snapshot in the git directory.
+Modified → We add some info
+Staged → We literally ADD the new info to the doc
+Committed → :D
+git add → We want to add the current changes in that file to the list of changes to be commited.
+git commit -m 'Message' to put some message without the text editor.
+
+WE CAN NOT REALIZE A COMMIT WITHOUT A MESSAGE, OKAY?
+
+
+
+
+====================20/07/2020====================
+git commit -a → Is a shortcut to stage any changes to TRACKED files and commit them in one step.
+it's useful when you've just made some small changes.
+Git uses the "HEAD" alias to represent the currently checked-out snapshot of the project.
+git log -p → Show the changes in the document and the usual info for git log.
+git log --stat → Will show the stats of the files, like which ones were changed and hw many lines were added or removed.
+git add -p → Will show us the differences and ask if we really want to add the changed things to the doc.
+git diff --staged → We can see the changes that are staged but not commmited.
+
+git rm ·file· → Removes the file from the repository.
+git mv OldName NewName → Renames files
+ALL THIS SHIT NEEDS TO BE COMMITTED
+With .gitignore we can ignore some kind of docs on the repository (in that way they won't show up when we need to commit them=
+e.g. echo .DS_STORE > .gitignore
+In the example from above, we create a file called ".gitignore" and put the text .DS_STORE on it to indicate that we want to ignore the files of the type .ds_store.
+Of course, we need to commit all of this.
+
+HEAD it's like a pointer
+git checkout File → We use this to remove changes that we don't really want.
+git reset HEAD File → Opposite of add, we use this to remove changes to the staging area.
+git commit --ammend → It's like ctrl + z. It opens a text editor to resend the commit (we can change the last commit message ;) )
+git revert HEAD/CommitID → It's like a general "Undo" but, it works making the opposit of what we just did. e.g. "Add +1" with git revert it should be "Res -1"
+This also generates a commit saying "this was bad".
+
+git log -p -n → n can be a number, e.g. 2
+with -p we can see the patch created with the commit, and with -n we only see the n last entries.
+
+
+
+====================23/07/2020====================
+Branch → Pointer to a particular commit
+--The default branch that git creates for you when a new repository is initialized is called master.
+git branch → to show the branches in the repository
+git branch *name* → to create a new branch
+git checkout *name* → to move to the already created branch
+git checkout -b *name* → to create a new branch and move into it
+
+====================25/07/2020====================
+Merging → Term that Git uses to bomcine branched data and history together.
+git merge → Merge branches.
+
+Hey i'm just testing around (BRANCH MASTER)
+
+Hey, i'm just MESSING around (BRANCH DICK)
+
+git log --graph (to see the commits as a graph) and --oneline (to see only one line per commit)
+git merge --abort → stop the merging and reset the status back to the previous commit.
+git push & pull → Put data in the repo or receive it.
+
+git remote show origin → Show information about our remote repo. Information like the sync of our repo.
+git fetch → To sync data fetching remote updates but doesn't merge // git pull fetches remote updates and merges
+git merge origin/master → to merge the changes from origin/master in the remote repo to the local repo.
+
+
+
+====================26/07/2020====================
+git push -u origin *branch name* → Generates a new branch in the remote (original - origin) repo. 
