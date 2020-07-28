@@ -69,6 +69,8 @@ git branch → to show the branches in the repository
 git branch *name* → to create a new branch
 git checkout *name* → to move to the already created branch
 git checkout -b *name* → to create a new branch and move into it
+git branch -d *branch* → Delete the branch only if it has already been pushed and merged.
+git branch -D *branch* → Deletes always the branch.
 
 ====================25/07/2020====================
 Merging → Term that Git uses to bomcine branched data and history together.
