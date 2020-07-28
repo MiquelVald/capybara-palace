@@ -98,3 +98,5 @@ git rebase → It's like a merge but special for third way merges. Meaning that,
 and make a fast foward algorithm with the latest commit available.
 -- This makes debugging easier and prevents three-way merges by transferring the completed work from one branch to another.
 git push --delete origin *branch name* → To delete a branch in the remote repo.
+Forking → A way of creating a copy of the given repository so that it belons to our user.
+Pull request → Commit or series of commit that you send to the owner of the repo so that they incorporate it into their tree.
