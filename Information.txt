@@ -10,7 +10,7 @@ patch original_file < changed_file.diff
 ls -l .git/ → Sirve para ver los archivos que hay en donde estés, con descripción
 git status → check the status in the folder 
 git commit → to make a commit :) we have to put some message here
---When you're in git commit you ned to write some message without the # tag, next to it
+--When you're in git commit you need to write some message without the # tag, next to it
 --you'll want to save the shit and >  get out, for that, just pulse Esc + Shift + ZZ :)
 
 Tracked files are a part of the snapshot, while untracked files aren't
@@ -90,3 +90,11 @@ git merge origin/master → to merge the changes from origin/master in the remot
 
 ====================26/07/2020====================
 git push -u origin *branch name* → Generates a new branch in the remote (original - origin) repo. 
+
+
+
+====================28/07/2020====================
+git rebase → It's like a merge but special for third way merges. Meaning that, if we use git rebase, the branch will merge
+and make a fast foward algorithm with the latest commit available.
+-- This makes debugging easier and prevents three-way merges by transferring the completed work from one branch to another.
+git push --delete origin *branch name* → To delete a branch in the remote repo.
