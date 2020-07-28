@@ -106,3 +106,5 @@ Pull request → Commit or series of commit that you send to the owner of the re
 When we choose squash, the commit messages are added together and an editor opens up to let us make any change.
 When we choose fix up, teh commit message for THAT commit is discarded.
 git show → show the latest commit
+
+git push -f → Force the git push.
