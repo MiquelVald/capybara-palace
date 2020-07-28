@@ -100,3 +100,7 @@ and make a fast foward algorithm with the latest commit available.
 git push --delete origin *branch name* → To delete a branch in the remote repo.
 Forking → A way of creating a copy of the given repository so that it belons to our user.
 Pull request → Commit or series of commit that you send to the owner of the repo so that they incorporate it into their tree.
+(rebase -i master)Squash & fix up→ The contents of the selected commit are merged into the previous commit in the list
+When we choose squash, the commit messages are added together and an editor opens up to let us make any change.
+When we choose fix up, teh commit message for THAT commit is discarded.
+git show → show the latest commit
