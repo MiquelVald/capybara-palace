@@ -108,3 +108,10 @@ When we choose fix up, teh commit message for THAT commit is discarded.
 git show → show the latest commit
 
 git push -f → Force the git push.
+
+We can use close #n to close an issue we have in our doc. For example, if we have
+an issue with the typos and it's the first one, we can use.
+"Closes #1" At the end of the commit message to automatically close the issue.
+
+Pipelines → Specifies the steps that need to run to get the result we want.
+Artifacts → The name used to describe any files that are generated as part of the pipeline.
