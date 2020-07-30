@@ -1,0 +1,15 @@
+=================30/07/2020: Conversión explícita=================
+str(variable) → Podemos utilizar la función "str" para convertir un valor que no sea del tipo String a, pues, String.
+int(variable) → Lo mismo pero ahora a entero.
+float(variable) → Lo mismo pero a float
+
+=================Retornar valores=================
+Con return podemos almacenar valores en una función para luego manejarlos a nuestro antojo.
+Por ejemplo:
+def area_triangulo(base, altura)
+	return base*altura/2
+Guardaremos el valor de lo ingresado en esta función sin imprimirla, de esta forma podremos realizar diversas operaciones.
+len → Retorna el tamaño de un String.
+len('Hey') = 3
+
+
