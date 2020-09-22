@@ -13,3 +13,56 @@ len → Retorna el tamaño de un String.
 len('Hey') = 3
 
 
+=================06/08/2020: Strings: teoría=================
+Slices. Una slice es una selección del texto que existe en un string mediante un rango.
+Por ejemplo. nombre[0:4] devolverá los caracteres del 0 al 4 del string "nombre".
+"index(something)". Retorna el valor posicional en donde se encuentra lo que ingresemos en something.
+Métodos .upper() y .lower(). Se encargan de poner en mayúsculas o minúsculas algo.
+ej. Variable[0].upper() pondrá la primer letra de la Variable en mayúsculas.
+.strip(). Elimina los espacios en blanco del string a los costados.
+.count(something). Cuenta cuántas veces se repite un substring dentro de un string.
+.endswith(something). Cuenta si el string termina de determinada forma
+.isalpha(). Retorna true o false si tiene letras.
+.isnumeric(). Retorna true o false si el string es numérico o no.
+'something'.join([list]). Une los objetos de la lusta mediante something.
+.split(). String a lista.
+.replace(old, new). Reemplaza en el string, old con new.
+Formatting expressions
+Expr	Meaning	Example
+{:d}	integer value	'{:d}'.format(10.5) → '10'
+{:.2f}	floating point with that many decimals	'{:.2f}'.format(0.5) → '0.50'
+{:.2s}	string with that many characters	'{:.2s}'.format('Python') → 'Py'
+{:<6s}	string aligned to the left that many spaces	'{:<6s}'.format('Py') → 'Py    '
+{:>6s}	string aligned to the right that many spaces	'{:>6s}'.format('Py') → '    Py'
+{:^6s}	string centered in that many spaces	'{:^6s}'.format('Py') → '  Py '
+
+
+=================08/08/2020: Listas: teoría=================
+.append(algo). Inserta algo al final de la lista
+.insert(posición, algo). Inserta algo en alguna posición de la lista.
+.remove(algo). Quita algo existente de la lista.
+.pop(posición). Quita algo de la lista con base en su posición actual.
+.extend(lista). Une dos listas, B al final de A.
+.join(listaa). Lista a String.
+reverse(lista). Permite iterar una lista al revés.
+
+=================Tuplas: teoría=================
+Una tupla es ... podríamos decir que es el bebé entre los Strings y las Listas.
+Es una lista que no se puede modificar.
+ej. Resultado = (1, 2, 3)
+También podemos usar 1, 2, 3 = x, y, z y cada uno tendrá un valor respectivo.
+
+=================Diccionarios: teoría=================
+Los diccionarios son como una mezcla de todo lo anterior. Se inicializan con curly brackets {}.
+files = {'jpg': 10, 'png': 20, 'txt': 30}
+Si queremos añadir algo a un diccionaio podemos hacerlo de la siguiente manera:
+files['doc'] = 8
+Lo que devolverá: files = {'jpg': 10, 'png': 20, 'txt': 30, 'doc': 8}
+COn el comando "del" podemos eliminar algo de un diccionario.
+del files['jpg'] eliminará "jpg" de nuestro duccionario.
+.items() Permite iterar con un diccionario.
+for x, y in dict.items():
+	print(x, y)
+Imprimirá key - item, key2 - item2, etc.
+.keys() Imprimirá solo las keys de un diccionario.
+.values() Imprimirá solo los valores de un diccionario.
